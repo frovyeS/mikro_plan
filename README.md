@@ -14,7 +14,7 @@ Bu depo, GitHub Actions ile siteyi otomatik derleyip GitHub Pages'e yayımlar. B
 6. İş akışı başarılı olduğunda **Settings → Pages** bölümünde yayın adresin görünür. Varsayılan dala yaptığın sonraki güncellemelerde site otomatik yeniden yayımlanır.
 
 > Önemli: Yalnızca kaynak dosyaları GitHub'a yüklemek siteyi tek başına yayımlamaz. GitHub Actions, Vite projesini `dist/` klasörüne derler ve bu klasörü Pages'e gönderir. `dist/` klasörünü elle oluşturup yüklemek gerekmez.
-
+...
 ## Yerel geliştirme (isteğe bağlı)
 
 ```bash
