@@ -1,0 +1,19 @@
+MIKRO PLAN - GITHUB PAGES YAMASI
+
+Bu paket, mevcut Mikro Plan deposuna uygulanacak degisiklikleri icerir.
+
+UYGULAMA (terminal yok):
+1. ZIP'i cikart.
+2. ZIP icindeki dosyalari GitHub deponun ANA DIZININE yukle.
+   - index.html ve package.json ayni seviyede olmali.
+   - vite.config.js de ayni seviyeye gelmeli.
+   - .github/workflows/deploy.yml yolu aynen korunmali.
+3. GitHub'da Settings > Pages bolumune gir.
+4. Build and deployment > Source alaninda GitHub Actions sec.
+5. Dosyalari commit et.
+6. Actions sekmesinde "Deploy Mikro Plan to GitHub Pages" isleminin bitmesini kontrol et.
+7. Basarili oldugunda Settings > Pages bolumunde sitenin adresi gorunur.
+
+Not: Bu yama kaynak src dosyalarini degistirmez. Mevcut React/Vite uygulamasi
+GitHub Actions tarafinda otomatik olarak dist/ klasorune derlenip yayinlanir.
+Yayin, deponun varsayilan dalini otomatik algilar.
