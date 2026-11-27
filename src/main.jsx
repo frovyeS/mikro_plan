@@ -1,4 +1,6 @@
-import React,{useState,useEffect,useRef} from 'react';import{createRoot}from'react-dom/client';import './style.css';
+const { useState, useEffect, useRef } = React;
+const { createRoot } = ReactDOM;
+
 const W=900,H=620,S=0.12;const starter=()=>({name:'Yeni Plan',unit:'cm',room:{w:500,h:400,wall:15,height:280},items:[],doors:[],windows:[],layers:{walls:true,objects:true,openings:true}});
 const catalog=[['Kanepe',180,85,'🛋️'],['Tekli koltuk',85,85,'🪑'],['Yatak',160,200,'🛏️'],['Masa',120,80,'▤'],['Sandalye',45,45,'🪑'],['Dolap',120,60,'▣'],['Buzdolabı',70,70,'▯'],['Bitki',50,50,'🪴'],['TV ünitesi',160,40,'▰'],['Duş',90,90,'▱'],['Lavabo',60,50,'◉'],['WC',40,70,'◒']];
 function App(){const [p,setP]=useState(()=>{try{return JSON.parse(localStorage.getItem('mikroplan'))||starter()}catch{return starter()}}),[mode,setMode]=useState('select'),[view,setView]=useState('2D'),[sel,setSel]=useState(null),[snap,setSnap]=useState(true),[grid,setGrid]=useState(true),[scale,setScale]=useState(1),[dark,setDark]=useState(true),[showDims,setShowDims]=useState(true),[toast,setToast]=useState(''),[history,setHistory]=useState([]),[future,setFuture]=useState([]),[drag,setDrag]=useState(null),[add,setAdd]=useState('');const ref=useRef();useEffect(()=>localStorage.setItem('mikroplan',JSON.stringify(p)),[p]);

@@ -1,0 +1,8 @@
+GUNCELLENEN DOSYALAR:
+- index.html
+- src/main.jsx
+- .github/workflows/deploy.yml
+- README_GITHUB_PAGES.txt (yeni)
+- PATCH_OZETI.txt (yeni)
+
+src/style.css uygulamanin mevcut tasarimini korumak icin pakete eklendi; degistirilmedi.
